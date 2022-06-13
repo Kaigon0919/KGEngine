@@ -160,11 +160,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BaseMath.cpp" />
     <ClCompile Include="KGVector2.cpp" />
+    <ClCompile Include="KGVector3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BaseMath.h" />
     <ClInclude Include="KGVector2.h" />
+    <ClInclude Include="KGVector3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

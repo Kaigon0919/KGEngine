@@ -19,6 +19,9 @@
     <ClInclude Include="KGVector3.h">
       <Filter>Math</Filter>
     </ClInclude>
+    <ClInclude Include="KGVector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="KGVector2.cpp">
@@ -28,6 +31,9 @@
       <Filter>Math</Filter>
     </ClCompile>
     <ClCompile Include="BaseMath.cpp">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="KGVector4.cpp">
       <Filter>Math</Filter>
     </ClCompile>
   </ItemGroup>

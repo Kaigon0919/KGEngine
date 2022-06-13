@@ -3,7 +3,7 @@
 namespace kg
 {
 
-	Vector3f::Vector3f(const XMVECTOR& xmvec)
+	Vector3f::Vector3f(const XMVECTOR& xmvec) : Vector3f()
 	{
 		XMStoreFloat3((XMFLOAT3*)this, xmvec);
 	}
@@ -703,5 +703,4 @@ namespace kg
 	{
 		XMStoreFloat3((XMFLOAT3*)this, v);
 	}
-
 }

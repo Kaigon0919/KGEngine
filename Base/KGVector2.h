@@ -63,11 +63,11 @@ namespace kg
 		Vector2f& operator *= (const float*const f);
 		Vector2f& operator *= (const int* const i);
 
-		Vector2f operator / (const Vector2f& v)const;
-		Vector2f operator / (const XMVECTOR& v)const;
-		Vector2f operator / (const XMFLOAT2& v)const;
-		Vector2f operator / (const float*const f)const;
-		Vector2f operator / (const int* const i)const;
+		const Vector2f operator / (const Vector2f& v)const;
+		const Vector2f operator / (const XMVECTOR& v)const;
+		const Vector2f operator / (const XMFLOAT2& v)const;
+		const Vector2f operator / (const float*const f)const;
+		const Vector2f operator / (const int* const i)const;
 
 		Vector2f& operator /= (const Vector2f& v);
 		Vector2f& operator /= (const XMVECTOR& v);
@@ -76,25 +76,25 @@ namespace kg
 		Vector2f& operator /= (const int* const i);
 
 		// ==
-		bool operator==(const Vector2f& vec)const;
-		bool operator==(const float* const arrValue)const;
-		bool operator==(const int* const arrValue)const;
-		bool operator==(const XMVECTOR& xmvec)const;
-		bool operator==(const XMFLOAT2& xmvec)const;
+		const bool operator==(const Vector2f& vec)const;
+		const bool operator==(const float* const arrValue)const;
+		const bool operator==(const int* const arrValue)const;
+		const bool operator==(const XMVECTOR& xmvec)const;
+		const bool operator==(const XMFLOAT2& xmvec)const;
 
 		// !=
-		bool operator!=(const Vector2f& vec)const;
-		bool operator!=(const float* const arrValue)const;
-		bool operator!=(const int* const arrValue)const;
-		bool operator!=(const XMVECTOR& xmvec)const;
-		bool operator!=(const XMFLOAT2& xmvec)const;
+		const bool operator!=(const Vector2f& vec)const;
+		const bool operator!=(const float* const arrValue)const;
+		const bool operator!=(const int* const arrValue)const;
+		const bool operator!=(const XMVECTOR& xmvec)const;
+		const bool operator!=(const XMFLOAT2& xmvec)const;
 		// Function
-		float Length()	const;
-		float Distance(const Vector2f& v)	const;
+		const float Length()	const;
+		const float Distance(const Vector2f& v)	const;
 		void Normalize();
-		static Vector2f Normalize(const Vector2f& v);
+		static const Vector2f Normalize(const Vector2f& v);
 
-		XMVECTOR Convert()	const;
+		const XMVECTOR Convert()	const;
 		void Convert(const XMVECTOR& v);
 
 	};
